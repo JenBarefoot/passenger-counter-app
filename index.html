@@ -1,17 +1,15 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-
-        <!--Increment Button-->
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <!--Save Button-->
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <!--JS-->
-        <script src="index.js"></script>
+        <div class="bark-counter"> 
+            <h1>How many barks:</h1>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">Add it up!</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <p id="save-el">Previous entires: </p>
+            <script src="index.js"></script>
+         </div>
     </body>
-    
 </html>

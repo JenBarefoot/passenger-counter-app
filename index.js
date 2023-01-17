@@ -14,15 +14,26 @@
 // increment the count variable when the button is clicked
 // change the count-el in the HTML
 
+
+// 1. Grab the save-el paragrah and store it in a variable called saveEl
+let saveEl = document.getElementById("save-el")
 //camelCase
 let countEl = document.getElementById("count-el") //pass in arguments
 let count = 0
+console.log(saveEl)
 
 function increment() {
-    count = count + 1
-    countEl.innerText = count
+    count += 1
+    countEl.textContent = count
 }
 
 function save() {
-    console.log(count)
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
+
+console.log(count)
 }
+// Google:
+// innerText alternative mdn = textContent https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
