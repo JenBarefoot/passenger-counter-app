@@ -34,11 +34,24 @@ button {
     border-radius: 5px;
 }
 
+
 #increment-btn {
     background: rgb(71, 128, 243);
 }
+#increment-btn:hover {
+    border: 0px solid #4780f3;
+    background-color: #fff;
+    color: rgb(71, 128, 243);
+    cursor: pointer;
+}
 
 #save-btn {
-    background: rgb(169, 3, 3);
+    background: #a90303;
+}
+#save-btn:hover {
+    border: 0px solid #a90303;
+    background-color: #fff;
+    color: #a90303;
+    cursor: pointer;
 }
 
